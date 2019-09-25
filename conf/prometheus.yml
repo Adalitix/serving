@@ -1,0 +1,9 @@
+global:
+  evaluation_interval: 5s
+  scrape_interval: 5s
+scrape_configs:
+- job_name: query
+  static_configs:
+  - targets:
+    - query_frontend_exporter-19062:1390
+
